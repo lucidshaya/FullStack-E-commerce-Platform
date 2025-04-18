@@ -1,0 +1,10 @@
+# Root .gitignore
+node_modules/
+.env
+.DS_Store
+build/
+
+# Server .gitignore
+/node_modules
+.env
+/uploads
