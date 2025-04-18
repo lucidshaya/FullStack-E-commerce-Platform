@@ -52,3 +52,4 @@ This project is licensed under the MIT License. Feel free to use and modify it a
 
 ## Contributions
 Contributions are welcome! Please fork the repository and submit a pull request with your changes.
+# FullStack-E-commerce-Platform
