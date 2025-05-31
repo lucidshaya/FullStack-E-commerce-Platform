@@ -5,6 +5,7 @@ import NewArrivals from '../components/Products/NewArrivals'
 import ProductsData from '../components/Products/ProductsData'
 import Moreproducts from '../components/Products/Moreproducts'
 import FeaturesSection from '../components/Products/FeaturesSection'
+import CollectionPage from './MyOrders'
 
 
 
@@ -15,20 +16,23 @@ const Home = () => {
         <Hero />
 
         {/* Gender Collections */}
-        <GenderCollectionSection />
+        {/* <GenderCollectionSection /> */}
        
        {/* New Arrivals */}
         <NewArrivals />
+        <hr />           
+        <CollectionPage />
+        <hr />
 
        {/*Best Seller*/}
-        <h2 className='text-3xl text-center font-bold mb-4'>
+      {/* <ProductsData /> */}
+        {/* <h2 className='text-3xl text-center font-bold mb-4'>
         Best Seller
-       </h2>
-       <ProductsData />
+       </h2> */}
 
     {/* YOU MAY ALSO LIKE */}
 
-
+            
     {/* <ProductGrid products={placeholderProducts} /> */}
 
     <FeaturesSection />

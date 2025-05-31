@@ -2,6 +2,8 @@ import React from 'react';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import { useRef, useState, useEffect } from 'react';
+// import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const NewArrivals = () => {
     const scrollRef = useRef(null);
@@ -91,6 +93,15 @@ const NewArrivals = () => {
         },
     ];;
 
+ 
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate('/products'); // Navigate to /dashboard
+    // Or navigate with state: navigate('/dashboard', { state: { userId: 123 } });
+    // Or go back: navigate(-1);
+  };
+
+
     // Touch/scrolling handlers
     const startDrag = (e) => {
         setIsDragging(true);
@@ -132,6 +143,9 @@ const NewArrivals = () => {
                 </p>
             </div>
 
+        <Link to={"/products"} className="text-blue-600 hover:underline text-center mb-6 block">
+            View All Products
+            </Link>
             <div className="relative group">
                 {showArrows && (
                     <>
@@ -172,6 +186,7 @@ const NewArrivals = () => {
                                 <img 
                                     src={product.images[0]?.url}
                                     alt={product.images[0]?.altText || product.name}
+                                    onClick={handleClick}   
                                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />

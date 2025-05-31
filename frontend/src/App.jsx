@@ -15,7 +15,7 @@ import ProductManagement from "./components/Admin/ProductManagement";
 const App = () => {
   return ( 
     <BrowserRouter>
-      <Toaster position="top-right" />
+      <Toaster position="top-right" />  
       <Routes>
         {/* User Layout */}
         <Route path="/" element={<UserLayout />}>
@@ -36,6 +36,7 @@ const App = () => {
           <Route path="products" element={<AdminProductsPage />} /> */}
           <Route path="users" element={<UserManagement />} />
           <Route path="products" element={<ProductManagement />} />
+          {/* <Route path="product/:id" element={<ProductsData />} /> */}
         </Route>
       </Routes>
     </BrowserRouter>

@@ -31,6 +31,8 @@ const Navbar = () => {
      
       </div>
       <div className='hidden md:flex space-x-6' >
+        <Link to='#' className='text-gray-700 hover:text-black text-sm font-medium uppercase'>
+     View all Products</Link>
         <Link to="collections/:collection" className='text-gray-700 hover:text-black text-sm font-medium uppercase'
         > Men</Link>
 
@@ -39,6 +41,7 @@ const Navbar = () => {
 
         <Link to="#" className='text-gray-700 hover:text-black text-sm font-medium uppercase'
         > Bottom</Link>
+    
         </div>
 {/* Right - Icons */}
 

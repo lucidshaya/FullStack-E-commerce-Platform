@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import heroImg from "../../assets/rabbit-hero.webp";
+import heroImg from "../../assets/ecommes.jpg";
 
 const Hero = () => {
   return (
@@ -17,7 +17,7 @@ const Hero = () => {
                 Discover the best products <br /> at unbeatable prices.
                 <br /> Shop now and save big!
             </p>
-            <Link to="#" className="bg-white text-gray-950 px-6 py-2 round-sm text-lg">
+            <Link to="#" className="bg-white text-gray-950 px-6 py-2 round-sm text-l hover:bg-black hover:text-white transition-colors duration-300">
             Shop Now
             </Link>
         </div>

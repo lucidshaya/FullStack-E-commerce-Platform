@@ -2,6 +2,8 @@ import React, { useEffect, useState, useRef } from 'react';
 import { FaFilter } from 'react-icons/fa';
 import FilterSideBar from '../components/Products/FilterSideBar';
 
+
+
 const CollectionPage = () => {
     const [products, setProducts] = useState([]);
     const [priceRange, setPriceRange] = useState([0, 200]);
@@ -72,7 +74,10 @@ const CollectionPage = () => {
     );
 
     return (
+        <>
+           <h1 className="text-2xl sm:text-3xl mt-5 font-bold text-gray-900 mb-3 text-center">Shop Now!</h1>   
         <div className="flex flex-col lg:flex-row min-h-screen">
+            
             {/* Mobile Filter Button */}
             <button 
                 className='lg:hidden border p-2 flex justify-center items-center m-4 rounded-md bg-gray-100 hover:bg-gray-200 transition-colors'
@@ -124,6 +129,7 @@ const CollectionPage = () => {
                 )}
             </div>
         </div>
+        </>
     );
 };
 
